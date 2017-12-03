@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static REST.(getCervejas(onComplete : ([Cerveja]?) -&gt; ()) -&gt; ()).(closure #1):REST.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "item[&quot;ibu&quot;] as! String">
+            </PersistentString>
+            <PersistentString
+               value = "item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cerveja">
+            </PersistentString>
+            <PersistentString
+               value = "lblTagline.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
