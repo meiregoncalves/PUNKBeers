@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class CervejasTableViewController: UITableViewController {
     
@@ -51,8 +53,14 @@ class CervejasTableViewController: UITableViewController {
         cell.lblNome.text = cerveja.nome
         
         if let teor_alcoolico = cerveja.teor_alcoolico {
-            cell.lblTeor.text = "\(teor_alcoolico)"
+            cell.lblTeor.text = "Teor Alcoólico: \(teor_alcoolico)"
         }
+        
+        //let url = URL(string: cerveja.urlImagem)
+        //cell.ivFoto.image = try! UIImage(data: Data(contentsOf: url!))
+        let url = ImageResource(downloadURL: URL(string:cerveja.urlImagem)!, cacheKey: cerveja.nome)
+        cell.ivFoto.kf.setImage(with: url)
+        
         
         return cell
     }

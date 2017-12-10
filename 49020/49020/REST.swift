@@ -54,8 +54,9 @@ class REST {
                             let nome = item["name"] as! String
                             let tagline = item["tagline"] as! String
                             let descricao = item["description"] as! String
+                            let urlImagem = item["image_url"] as! String
 
-                            let cerveja = Cerveja(id: id, nome: nome, tagline: tagline, teor_alcoolico: nil, escala_amargor: nil, descricao: descricao)
+                            let cerveja = Cerveja(id: id, nome: nome, tagline: tagline, teor_alcoolico: nil, escala_amargor: nil, descricao: descricao, urlImagem : urlImagem)
                             
                             if let teor_alcoolico = item["abv"] as? Double? {
                                 cerveja.teor_alcoolico = teor_alcoolico

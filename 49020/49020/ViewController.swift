@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tvDescricao: UITextView!
     @IBOutlet weak var lblTeorAlcoolico: UILabel!
     @IBOutlet weak var lblEscalaAmargor: UILabel!
+    @IBOutlet weak var ivFoto: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +45,9 @@ class ViewController: UIViewController {
                 lblEscalaAmargor.text = ""
             }
             
+            let url = URL(string: cerveja.urlImagem)
+            ivFoto.kf.setImage(with: ImageResource(downloadURL: url!, cacheKey: cerveja.nome))
+//            ivFoto.image = try! UIImage(data: Data(contentsOf: url!))
         }
     }
 

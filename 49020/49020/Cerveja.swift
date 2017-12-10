@@ -17,11 +17,13 @@ class Cerveja {
     var teor_alcoolico: Double?
     var escala_amargor: Double?
     var descricao: String
+    var urlImagem : String
     
-    init(id : Int, nome : String, tagline : String, teor_alcoolico : Double?, escala_amargor : Double?, descricao : String) {
+    init(id : Int, nome : String, tagline : String, teor_alcoolico : Double?, escala_amargor : Double?, descricao : String, urlImagem : String) {
         self.id = id
         self.nome = nome
         self.tagline = tagline
+        self.urlImagem = urlImagem
         
         if let teor_alcoolico = teor_alcoolico {
             self.teor_alcoolico = teor_alcoolico

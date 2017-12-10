@@ -12,6 +12,7 @@ class CervejaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblNome: UILabel!
     @IBOutlet weak var lblTeor: UILabel!
+    @IBOutlet weak var ivFoto: UIImageView!
     
     override func awakeFromNib() {
         
